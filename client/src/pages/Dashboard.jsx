@@ -74,7 +74,7 @@ const Dashboard = () => {
       setLoading(true);
 
       const res = await axios.get(
-        "http://localhost:5000/api/tasks",
+        "https://taskflow-ai-76x5.onrender.com/api/tasks",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -107,7 +107,7 @@ const Dashboard = () => {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/tasks",
+        "https://taskflow-ai-76x5.onrender.com/api/tasks",
         taskData,
         {
           headers: {
@@ -135,7 +135,7 @@ const Dashboard = () => {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://taskflow-ai-76x5.onrender.com/api/tasks/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -160,7 +160,7 @@ const Dashboard = () => {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/tasks/${task._id}`,
+        `https://taskflow-ai-76x5.onrender.com/api/tasks/${task._id}`,
         {
           ...task,
           status: "Completed",
@@ -213,7 +213,7 @@ const Dashboard = () => {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/tasks/${editingTask._id}`,
+        `https://taskflow-ai-76x5.onrender.com/api/tasks/${editingTask._id}`,
         editForm,
         {
           headers: {

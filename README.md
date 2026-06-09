@@ -250,13 +250,13 @@ npm run dev
 
 Deploy using:
 
-* Vercel
+* Vercel-https://vercel.com/
 
 ## Backend
 
 Deploy using:
 
-* Render
+* Render-https://render.com/
 
 ## Database
 
